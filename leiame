@@ -1,0 +1,54 @@
+=== LEIAME ===
+Trabalho Prático de Matemática Discreta - Espirais
+João Teixeira 
+Universidade Federal de Minas Gerais (UFMG)
+
+1. DESCRIÇÃO DO PROJETO
+Este projeto implementa três tipos de espirais matemáticas:
+- Espiral Quadrada (complexidade O(√n))
+- Espiral Triangular (complexidade O(n))
+- Espiral Criativa original (complexidade O(n))
+
+2. ARQUIVOS INCLUÍDOS
+/espirais
+├── espirais.h       # Cabeçalho com definições comuns
+├── espquadrada.c    # Implementação da espiral quadrada
+├── esptriangular.c  # Implementação da espiral triangular
+├── minhaesp.c       # Implementação da espiral criativa
+├── main.c           # Programa principal de teste
+└── Makefile         # Script de compilação
+
+3. REQUISITOS DO SISTEMA
+- Sistema operacional: Linux (testado no Ubuntu 22.04)
+- Compilador: gcc (versão 9.4.0 ou superior)
+- Bibliotecas: math.h (já incluída)
+
+4. INSTRUÇÕES DE COMPILAÇÃO
+1) Abra o terminal na pasta do projeto
+2) Execute o comando:
+   $ make
+
+5. INSTRUÇÕES DE USO
+Modo interativo:
+$ ./espirais
+(Digite valores de n quando solicitado)
+
+Modo teste automático (n de 0 a 20):
+$ for n in {0..20}; do ./espirais <<< "$n"; done
+
+6. TESTES REALIZADOS
+- Validação cruzada com os valores esperados do PDF (n=0 até n=20)
+- Testes de limite com valores grandes (n=1.000.000)
+- Verificação de casos especiais (n=0)
+
+7. RESULTADOS ESPERADOS
+Os resultados para n=0 até n=20 estão documentados no PDF do trabalho e podem ser verificados executando o teste automático.
+
+8. DOCUMENTAÇÃO ADICIONAL
+Consulte o arquivo PDF anexo para:
+- Explicação detalhada dos algoritmos
+- Análise de complexidade
+- Diagramas das espirais
+- Referências bibliográficas
+
+
